@@ -1,0 +1,26 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "A node application that creates a dynamic html page from terminal input",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rohitsuresh1/Team-Profile-Generator.git"
+  },
+  "author": "Rohith Suresh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rohitsuresh1/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/Rohitsuresh1/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^28.1.0"
+  }
+}
