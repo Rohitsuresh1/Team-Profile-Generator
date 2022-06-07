@@ -210,8 +210,6 @@ class App {
         .then(({choise})=>{
             if(choise==='Stop adding (team complete)'){
                const page= generatePage(this.data);
-            //    console.log(this.data);
-            //    console.log(page);
                fs.writeFile('./dist/index.html',page, err => {
                 if (err) throw new Error(err);
                 });

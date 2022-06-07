@@ -4,10 +4,10 @@ const returnHtml=data=>{
     for(i=0;i<data.length;i++){
         if(data[i].getRole()==='Manager'){
             html+=`
-            <div class="col-lg-3 mb-2">
+            <div class="w-auto mx-auto p-3 col-lg-3 col-md-2 mb-2">
             <div class="card-body bg-danger">
             <h5 class="card-title">${data[i].getName()}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">${data[i].getRole()}</h6>
+            <h6 class="card-subtitle mb-2 text-white"><i class='fa fa-anchor'></i> ${data[i].getRole()}</h6>
             </div>
             <div class = "card-body bg-secondary">
             <ul class="list-group list-group-flush">
@@ -18,10 +18,10 @@ const returnHtml=data=>{
             </div></div>`;
         } else if (data[i].getRole()==='Engineer') {
             html+=`
-            <div class="col-lg-3 mb-2">
+            <div class="w-auto mx-auto p-3 col-lg-3 col-md-2 mb-2">
             <div class="card-body bg-info">
             <h5 class="card-title">${data[i].name}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">${data[i].getRole()}</h6>
+            <h6 class="card-subtitle mb-2 text-white"><i class='fa fa-code ' ></i> ${data[i].getRole()}</h6>
             </div>
             <div class = "card-body bg-secondary">
             <ul class="list-group list-group-flush">
@@ -32,10 +32,10 @@ const returnHtml=data=>{
             </div></div>`;
         } else {
             html+=`
-            <div class="col-lg-3 mb-2">
+            <div class="w-auto mx-auto p-3 col-lg-3 col-md-2 mb-2">
             <div class="card-body bg-warning">
             <h5 class="card-title">${data[i].name}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">${data[i].getRole()}</h6>
+            <h6 class="card-subtitle mb-2 text-white"><i class='fa fa-book ' ></i> ${data[i].getRole()}</h6>
             </div>
             <div class = "card-body bg-secondary">
             <ul class="list-group list-group-flush">
@@ -66,7 +66,7 @@ return `<!doctype html>
     </header>
     
     <div class="row">
-    <div class="card-deck mx-auto" >
+    <div class="card-deck w-100 p-3 mx-auto" >
         ${returnHtml(data)}
     </div>
     </div>
